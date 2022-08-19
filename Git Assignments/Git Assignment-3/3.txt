@@ -1,0 +1,114 @@
+BRANCHING:
+1)git branch
+
+2)git branch gitNewBranch
+
+3) git branch
+  gitNewBranch
+* master
+
+4) git checkout gitNewBranch
+Switched to branch 'gitNewBranch'
+
+5) echo "Hi,this is from newly created branch">>newfile.txt
+
+6) git add .
+warning: in the working copy of 'newfile.txt', LF will be replaced by CRLF the ext time Git touches it
+
+7)git commit -m "GitNewBranch commit"
+[gitNewBranch d5a4693] GitNewBranch commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile.txt
+
+8)git status
+On branch gitNewBranch
+nothing to commit, working tree clean
+
+9)git push --set-upstream origin gitNewBranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 400 bytes | 400.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'gitNewBranch' on GitHub by visiting:
+remote:      https://github.com/BARANIDHARAN-S-Git/GitDemo/pull/new/gitNewBranc
+remote:
+To https://github.com/BARANIDHARAN-S-Git/GitDemo.git
+ * [new branch]      gitNewBranch -> gitNewBranch
+branch 'gitNewBranch' set up to track 'origin/gitNewBranch'.
+
+10)git status
+On branch gitNewBranch
+Your branch is up to date with 'origin/gitNewBranch'.
+
+nothing to commit, working tree clean
+
+MERGING:
+
+1) git checkout master
+Switched to branch 'master'
+
+2)git diff masrter..gitNewBranch
+fatal: ambiguous argument 'masrter..gitNewBranch': unknown revision or path notin the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+3)git checkout master
+Already on 'master'
+
+
+4)git merge gitNewBranch
+Updating 7c958d6..d5a4693
+Fast-forward
+ newfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile.txt
+
+5) git log --oneline --graph --decorate
+* 8e50368 (HEAD -> master, origin/master) ignore
+*   8262d63 Merge pull request #1 from BARANIDHARAN-S-Git/gitNewBranch
+|\
+| * 8b57beb Delete log.txt
+| * d884b76 Delete .gitignore
+| * 74a0a3a Delete welcome.txt
+| * d5a4693 (origin/gitNewBranch, gitNewBranch) GitNewBranch commit
+|/
+* 7c958d6 second commit
+* 45b79b1 second commit
+* cc0babc Delete .gitignore.txt
+* 5c8857a Delete welcome.log
+* 7009a6f second commit
+* aaec0ce Delete welcome.log
+* 614d321 second commit
+* f991b4e Delete welcome.log
+* 986b37c second commit
+* 5f8a4ce Update welcome.txt
+* 6c9f219 first commit
+
+6)git branch -d gitNewBranch
+Deleted branch gitNewBranch (was d5a4693).
+
+
+7) git branch
+* master
+
+8) git add .
+
+9) git commit -m"delete branch"
+On branch master
+nothing to commit, working tree clean
+
+10)git push origin --delete gitNewBranch
+To https://github.com/BARANIDHARAN-S-Git/GitDemo.git
+ - [deleted]         gitNewBranch
+
+11)git status
+On branch master
+nothing to commit, working tree clean
+
+12) git branch
+* master
+
+

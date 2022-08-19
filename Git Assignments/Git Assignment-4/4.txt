@@ -1,0 +1,97 @@
+1)git status
+On branch master
+nothing to commit, working tree clean
+
+2) git branch GitWork
+
+3)  git checkout GitWork
+Switched to branch 'GitWork'
+
+4)touch hello.xml
+
+5) git add .
+
+6)  cat hello.xml
+<event>
+<name>alen</name>
+<date>25/08/2022</date>
+<event>
+
+7) git status
+On branch GitWork
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hello.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.xml
+
+
+
+8)git add .
+
+9) git commit -m "hell0 from GitWork"
+[GitWork 1c4c4aa] hell0 from GitWork
+ 1 file changed, 4 insertions(+)
+
+10) git checkout master
+Switched to branch 'master'
+
+11)touch hello.xml
+
+12) cat hello.xml
+<letter>
+<name>arjith</name>
+<city>chennai</city>
+</letter>
+
+13)git add .
+
+14)git commit -m "hello from master"
+[master fecf813] hello from master
+ 1 file changed, 4 insertions(+)
+ create mode 100644 hello.xml
+
+15) git log --oneline --graph --decorate
+* fecf813 (HEAD -> master) hello from master
+* a1ae142 (origin/master) Delete welcome.log
+* 8e50368 ignore
+*   8262d63 Merge pull request #1 from BARANIDHARAN-S-Git/gitNewBranch
+|\
+| * 8b57beb Delete log.txt
+| * d884b76 Delete .gitignore
+| * 74a0a3a Delete welcome.txt
+| * d5a4693 GitNewBranch commit
+|/
+* 7c958d6 second commit
+* 45b79b1 second commit
+* cc0babc Delete .gitignore.txt
+* 5c8857a Delete welcome.log
+* 7009a6f second commit
+* aaec0ce Delete welcome.log
+* 614d321 second commit
+* f991b4e Delete welcome.log
+* 986b37c second commit
+* 5f8a4ce Update welcome.txt
+* 6c9f219 first commit
+
+16) git diff GitWork..master
+diff --git a/hello.xml b/hello.xml
+index 170532f..9eac3a9 100644
+--- a/hello.xml
++++ b/hello.xml
+@@ -1,4 +1,4 @@
+-<event>
+-<name>alen</name>
+-<date>25/08/2022</date>
+-</event>
+\ No newline at end of file
++<letter>
++<name>arjith</name>
++<city>chennai</city>
++</letter>
+\ No newline at end of file
+
+

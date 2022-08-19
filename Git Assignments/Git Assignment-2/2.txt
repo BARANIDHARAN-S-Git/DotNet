@@ -1,0 +1,38 @@
+1)$ touch .gitignore
+
+2) cat .gitignore
+*.log
+
+3) git add .
+
+4) git commit -m "gitignore"
+[master 8f77dfe] gitignore
+ 2 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 logfile.log.txt
+
+5) git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 708 bytes | 708.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/BARANIDHARAN-S-Git/GitDemo.git
+   a1ae142..8f77dfe  master -> master
+6) touch logfile.log
+
+
+7) cat logfile.log
+hi this is from log file
+
+8)git add .
+
+9) git commit -m "gitignore"
+On branch master
+nothing to commit, working tree clean
+
+10)git push origin master
+Everything up-to-date
+
+
