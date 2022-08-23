@@ -13,31 +13,31 @@ namespace ConsoleApp53
             int n;
             Console.WriteLine("Enter the n");
             n=Convert.ToInt32(Console.ReadLine());
-            int count = 0;
+            bool count = false;
             int[] a = new int[n];
             Console.WriteLine("Enter the {0} Elements",n);
             for(int i = 0; i < n; i++)
             {
                 a[i] =Convert.ToInt32(Console.ReadLine());
             }
-            Console.WriteLine("The first repeating element and the idex :");
+            Console.WriteLine("The first repeating element and the index :");
             for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < n; j++)
+                for (int j = i; j < n; j++)
                 {
                     if (a[i] == a[j])
                     {
-                        count++;
+                        count = true;
                     }
                 }
                 
-                if(count > 2 || count==2)
+                if(count)
                 {
                     Console.WriteLine("The Index is :"+(i + 1) +" "+"Elemenet is : " + a[i]);
                     break;
 
                 }
-                count = 0;
+                count = false;
             }
 
 
