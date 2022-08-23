@@ -102,19 +102,13 @@ namespace ConsoleApp54
                 get
                 {
                     
-                        
-                    
-                  
-                        return employeename;
+                     return employeename;
                     
                     
                 }
                 set
                 {
-                    
-                        Console.WriteLine("error");
-                    
-                        employeename = value;
+                  employeename = value;
                     
                     
                 }
