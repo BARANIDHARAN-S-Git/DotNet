@@ -10,25 +10,7 @@ namespace _26thAugust2022
     internal class ps3
     {
 
-        class products
-        {
-            private int _productID;
-
-            public int ProductID
-            {
-                get { return _productID; }
-                set { _productID = value; }
-            }
-            private string _productname;
-
-            public string Productname
-            {
-                get { return _productname; }
-                set { _productname = value; }
-            }
-
-
-        }
+        
 
         static void Main(string[] args)
         {
