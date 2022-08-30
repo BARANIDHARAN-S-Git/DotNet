@@ -17,10 +17,22 @@ namespace _29thAugusr2022
                 gsl.InsertFront(gsl, 65);
                 gsl.InsertFront(gsl, 75);
                 gsl.Print(gsl);
-                gsl.InsertLast(gsl, 123);
+                Console.WriteLine(" ");
+                gsl.InsertLast(gsl, 124);
+                gsl.InsertLast(gsl, 234);
                 gsl.Print(gsl);
-            
-            }
-        
+                Console.WriteLine(" ");
+                gsl.InsertAfter(gsl.head, 34);
+                gsl.Print(gsl);
+
+                Console.WriteLine(" ");
+                gsl.GetLast(gsl);
+                gsl.Print(gsl);
+
+
+
+
+        }
+
     }
 }
