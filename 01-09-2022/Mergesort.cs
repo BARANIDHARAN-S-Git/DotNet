@@ -25,7 +25,7 @@ namespace _1stSeptember2022
             int end = arr.Length - 1;
 
             mergeSort(arr, 0, end);
-            Console.WriteLine("----------Sorted------------");
+            Console.WriteLine("------------Sorted-------------");
             printarray(arr);
 
             Console.ReadLine();
