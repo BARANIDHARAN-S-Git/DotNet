@@ -84,7 +84,7 @@ namespace category
             
 
             Console.WriteLine(" ");
-            Console.WriteLine("-----------------------");
+            Console.WriteLine("------------------------");
         }
     
 
