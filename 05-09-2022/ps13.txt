@@ -1,0 +1,15 @@
+* No,we cannot create objects of interface and abstract class
+
+* We cannot create objects of an interface. To use an interface, other classes must implement it. Same as in C# Inheritance, we use : symbol to implement an interface.
+
+* In C#, we cannot create objects of an abstract class. We use the abstract keyword to create an abstract class. For example,
+
+// create an abstract class
+abstract class Language {
+  // fields and methods
+}
+
+
+// try to create an object Language
+// throws an error
+Language obj = new Language();
