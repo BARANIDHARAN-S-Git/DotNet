@@ -27,17 +27,6 @@ namespace _5thSeptember2022
             c.Addtocart(b1);
             c.Addtocart(b2);
             c.printbooks();
-           
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
