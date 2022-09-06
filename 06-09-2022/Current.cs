@@ -27,7 +27,7 @@ namespace Abstract
             
             double interest;
             interest = (amount * 0.02f * 30) / 365;
-            Console.WriteLine("The interst from savings : " + interest);
+            Console.WriteLine("The interst from current : " + interest);
 
         }
 
