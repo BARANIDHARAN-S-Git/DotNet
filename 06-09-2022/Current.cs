@@ -33,7 +33,7 @@ namespace Abstract
 
         public void duration()
         {
-            Console.WriteLine("The numbers of days deposit amount kept in the bank"+previousdeposit.Subtract(previouswithdraw));
+            Console.WriteLine("The numbers of days deposit amount kept in the bank : "+previousdeposit.Subtract(previouswithdraw));
         }
     }
    
