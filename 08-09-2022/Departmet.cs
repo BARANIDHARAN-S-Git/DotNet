@@ -117,7 +117,7 @@ namespace Employees
             Addemp = Addemployee;
             Deleteemp = Deleteemployee;
             UpdateEmp = Updateemployee;
-            Console.WriteLine("Enter any one form menu shown below : ");
+            Console.WriteLine("Enter any one option from menu shown below : ");
             Console.WriteLine(" ");
             Console.WriteLine("\nMenu: \n1)Add \n2)Delete \n3)update");
             int no = Convert.ToInt32(Console.ReadLine());
