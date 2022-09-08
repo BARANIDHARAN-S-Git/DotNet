@@ -70,24 +70,25 @@ namespace _8thSeptember2022
              d.adddeleteupdate(e3);
              d.adddeleteupdate(e4);
              d.adddeleteupdate(e5);
+           
+            Console.WriteLine("-------------------");
+            Console.WriteLine(" ");
             Console.WriteLine("The Employees are : ");
             
             Print p = new Print(d.Print);
              p.Invoke(d.employee);
             Console.WriteLine("-------------");
+           
             Console.WriteLine("Delete By ID");
             d.deletebyid(117);
             d.display();
-
-           
-
             
             Console.WriteLine("----------------------------");
             Console.WriteLine("Employees Reporting to their Managers : ");
             d.Reporttomanager(d.employee);
             Console.WriteLine("--------------");
 
-
+            Console.Write("Login for Employee : ");
             Predicate<Tuple<int, string>> verify = (v1) =>
             {
                 if (v1.Item2 == "password")
