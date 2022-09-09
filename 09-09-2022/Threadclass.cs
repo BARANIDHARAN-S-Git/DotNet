@@ -50,14 +50,6 @@ namespace _9thSeptember2022
             
 
             Console.ReadLine();
-           
-            
-           
-            
-
         }
-
-       
-
     }
 }
