@@ -61,8 +61,44 @@ namespace _8thSeptember2022
              e5.salary = 15000;
              e5.mgr = "MS Dhoni";
 
+            Employee e6 = new Employee();
+            e6.EmployeeID = 118;
+            e6.Employeename = "barath";
+            e6.departmentnumber = 18;
+            e6.salary = 15000;
+            e6.mgr = "basha";
+            
+            Employee e7 = new Employee();
+            e7.EmployeeID = 119;
+            e7.Employeename = "arun";
+            e7.departmentnumber = 19;
+            e7.salary = 15000;
+            e7.mgr = "balaji";
+            
+            Employee e8 = new Employee();
+            e8.EmployeeID = 120;
+            e8.Employeename = "ajas";
+            e8.departmentnumber = 120;
+            e8.salary = 15000;
+            e8.mgr = "halith";
+            
+            Employee e9 = new Employee();
+            e9.EmployeeID = 121;
+            e9.Employeename = "ravi";
+            e9.departmentnumber = 21;
+            e9.salary = 15000;
+            e9.mgr = "baskar";
+            
+            Employee e10 = new Employee();
+            e10.EmployeeID = 122;
+            e10.Employeename = "bhuvanesh";
+            e10.departmentnumber = 17;
+            e10.salary = 15000;
+            e10.mgr = "bala";
 
-             Departmet d = new Departmet();
+
+
+            Departmet d = new Departmet();
              d.adddeleteupdate(e);
              d.adddeleteupdate(e1);
              d.adddeleteupdate(e2);
@@ -70,7 +106,12 @@ namespace _8thSeptember2022
              d.adddeleteupdate(e3);
              d.adddeleteupdate(e4);
              d.adddeleteupdate(e5);
-           
+            d.adddeleteupdate(e6);
+            d.adddeleteupdate(e7);
+            d.adddeleteupdate(e8);
+            d.adddeleteupdate(e9);
+            d.adddeleteupdate(e10);
+
             Console.WriteLine("-------------------");
             Console.WriteLine(" ");
             Console.WriteLine("The Employees are : ");
