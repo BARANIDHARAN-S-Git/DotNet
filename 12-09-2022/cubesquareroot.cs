@@ -23,7 +23,7 @@ namespace calculator
 
         }
 
-       public void squareroot()
+       public void sqrt(double number)
         {
             Console.WriteLine("Square root of the number : {0} is : {1}",number,Math.Sqrt(number));
         }
