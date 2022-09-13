@@ -51,7 +51,7 @@ namespace _13thSeptember2022
             u5.Movieborrowed(m1);
           
             u1.Movieborrowed(m2);
-            u1.RetrunMovie(m2, 7);
+            u1.RetrunMovie(m2, 8);
             u1.Movieborrowed(m3);
             Console.WriteLine("-----------------------------------------------------------------");
             u1.ShowMyList();
