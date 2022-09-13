@@ -53,13 +53,13 @@ namespace _13thSeptember2022
             u1.Movieborrowed(m2);
             u1.RetrunMovie(m2, 5);
             u1.Movieborrowed(m3);
-            Console.WriteLine("----------------------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------------------------");
             u1.ShowMyList();
-            Console.WriteLine("----------------------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------------------------");
 
             Console.WriteLine("Based on Language");
             u1.SearchByLanguage("Tamil");
-            Console.WriteLine("-----------------------------------------------------------------");
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("Based on genre");
             u1.SearchByGenre("Action");
             

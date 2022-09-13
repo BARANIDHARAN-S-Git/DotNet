@@ -8,6 +8,7 @@ namespace usermodule
 {
     public  class User
     {
+        
         public int moviesBorrowed = 0;
         public enum UserLevel
         {

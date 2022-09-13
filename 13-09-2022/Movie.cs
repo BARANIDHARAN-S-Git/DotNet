@@ -79,7 +79,5 @@ namespace usermodule
                 Console.WriteLine(item.MovieName);
             }
         }
-
-
     }
 }
