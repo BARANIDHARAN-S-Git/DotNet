@@ -44,14 +44,14 @@ namespace _13thSeptember2022
             u2.Movieborrowed(m1);
             u4.Movieborrowed(m1);
             Console.WriteLine("Movie 1 Availability " + m1.Available);
-            u2.RetrunMovie(m1, 4);
+            u2.RetrunMovie(m1, 2);
             Console.WriteLine("Movie 1 Availability " + m1.Available);
             u3.Movieborrowed(m1);
            
             u5.Movieborrowed(m1);
           
             u1.Movieborrowed(m2);
-            u1.RetrunMovie(m2, 5);
+            u1.RetrunMovie(m2, 7);
             u1.Movieborrowed(m3);
             Console.WriteLine("-----------------------------------------------------------------");
             u1.ShowMyList();
