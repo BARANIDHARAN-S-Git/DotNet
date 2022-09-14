@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace usermodule
 {
-    public  class User
+   public  class User
     {
         
         public int moviesBorrowed = 0;
@@ -106,8 +106,14 @@ namespace usermodule
                 m.Available++;
                 this.moviesBorrowed--;
                 BorrowedMovies.Remove(m);
-                double totalCost = days * m.Cost;
-                Console.WriteLine($"You Need to Pay {totalCost}");
+                
+                double gst = 0.18 * m.Cost;
+                double br =days* 0.01 * m.Cost;
+                double t = gst + br + m.Cost;
+                Console.WriteLine($"GST is {gst}");
+                Console.WriteLine($"Bluray cost is {br}");
+                Console.WriteLine("Total cost is" + " " + t);
+               
             }
             else
             {
