@@ -61,7 +61,11 @@ namespace usermodule
             get { return _Password; }
             set { _Password = value; }
         }
-        public void AddUser(string UserName, string Password, string UserLevel1)
+
+      
+       
+
+        public void AddUser( string UserLevel1)
         {
             if (UserLevel1 == "Silver")
             {
@@ -75,8 +79,10 @@ namespace usermodule
             {
                 this.userLevel = (int)UserLevel.Platinum;
             }
-            this.UserName = UserName;
+           this._UserName = UserName;
             this.Password = Password;
+            
+           
         }
         public void Movieborrowed(Movie mov)
         {
