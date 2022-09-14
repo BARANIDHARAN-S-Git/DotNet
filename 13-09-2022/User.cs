@@ -23,23 +23,7 @@ namespace usermodule
             BorrowedMovies = new List<Movie>();
 
         }
-        public User(string UserName, string Password, string UserLevel1)
-        {
-            if (UserLevel1 == "Silver")
-            {
-                this.userLevel = (int)UserLevel.Silver;
-            }
-            if (UserLevel1 == "Gold")
-            {
-                this.userLevel = (int)UserLevel.Gold;
-            }
-            if (UserLevel1 == "Platinum")
-            {
-                this.userLevel = (int)UserLevel.Platinum;
-            }
-            this.UserName = UserName;
-            this.Password = Password;
-        }
+      
         private int _UserLevel;
 
         public int userLevel
