@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,10 +37,10 @@ namespace _13thSeptember2022
 
             Console.WriteLine("userid:123,password:enter");
             Console.WriteLine("Enter the userid : ");
-            int id = Convert.ToInt32(Console.ReadLine());
+            u1.Userid= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the password");
-            string pass = Console.ReadLine();
-            if(id==123 && pass == "enter")
+            u1.Password = Console.ReadLine();
+            if(u1.Userid==123 && u1.Password == "enter")
             {
                 Console.WriteLine("Logged in successfully");
 
