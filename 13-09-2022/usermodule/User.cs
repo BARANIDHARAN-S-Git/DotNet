@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Cache;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ namespace usermodule
     {
         
         public int moviesBorrowed = 0;
+        public static event Func<string, bool> permission;
         public enum UserLevel
         {
             Silver = 2,
@@ -31,12 +33,12 @@ namespace usermodule
             get { return _UserLevel; }
             set { _UserLevel = value; }
         }
-        private string _UserName;
+        private int _Userid;
 
-        public string UserName
+        public int Userid
         {
-            get { return _UserName; }
-            set { _UserName = value; }
+            get { return _Userid; }
+            set { _Userid = value; }
         }
         private string _Password;
 
@@ -63,29 +65,62 @@ namespace usermodule
             {
                 this.userLevel = (int)UserLevel.Platinum;
             }
-           this._UserName = UserName;
-            this.Password = Password;
-            
+         
            
+        }
+        public void basedonlanguage(string language)
+        {
+            foreach (var item in Movie.l)
+            {
+                if (item.Language == language)
+                {
+                    Console.WriteLine($"Movie Name : {item.MovieName}  Language : {item.Language} Genere : {item.genres}");
+                }
+            }
+        }
+        public void basedongenre(string genre)
+        {
+            foreach (var item in Movie.l)
+            {
+                if (item.genres == genre)
+                {
+                    Console.WriteLine($"Movie Name : {item.MovieName}  Language : {item.Language} Genere : {item.genres}");
+                }
+            }
+        }
+        public void display()
+        {
+            foreach (var item in this.BorrowedMovies)
+            {
+                Console.WriteLine($"Movie Name : {item.MovieName}  Language : {item.Language} Genere : {item.genres}");
+            }
         }
         public void Movieborrowed(Movie mov)
         {
-            if (mov.Available > 0)
+            bool response = permission(mov.MovieName);
+            if (response)
             {
-                if (this.moviesBorrowed <= this.userLevel)
+                if (mov.Available > 0)
                 {
-                    mov.Available--;
-                    this.moviesBorrowed++;
-                    BorrowedMovies.Add(mov);
+                    if (this.moviesBorrowed <= this.userLevel)
+                    {
+                        mov.Available--;
+                        this.moviesBorrowed++;
+                        BorrowedMovies.Add(mov);
+                    }
+                    else
+                    {
+                        Console.WriteLine("cannot able to borrow movies");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("cannot able to borrow movies");
+                    Console.WriteLine("mivie is not available");
                 }
             }
             else
             {
-                Console.WriteLine("mivie is not available");
+                Console.WriteLine("Admin didn't give permission");
             }
         }
         public void RetrunMovie(Movie m, int days)
@@ -110,32 +145,6 @@ namespace usermodule
                 Console.WriteLine("The Borrowed movie and returned movie is not same");
             }
         }
-        public void SearchByLanguage(string language)
-        {
-            foreach (var item in Movie.l)
-            {
-                if (item.Language == language)
-                {
-                    Console.WriteLine($"Movie Name : {item.MovieName}  Language : {item.Language} Genere : {item.genres}");
-                }
-            }
-        }
-        public void SearchByGenre(string genre)
-        {
-            foreach (var item in Movie.l)
-            {
-                if (item.genres == genre)
-                {
-                    Console.WriteLine($"Movie Name : {item.MovieName}  Language : {item.Language} Genere : {item.genres}");
-                }
-            }
-        }
-        public void ShowMyList()
-        {
-            foreach (var item in this.BorrowedMovies)
-            {
-                Console.WriteLine($"Movie Name : {item.MovieName}  Language : {item.Language} Genere : {item.genres}");
-            }
-        }
+       
     }
 }

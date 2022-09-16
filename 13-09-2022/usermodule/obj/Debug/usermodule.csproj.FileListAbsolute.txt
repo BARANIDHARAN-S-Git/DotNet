@@ -1,0 +1,6 @@
+C:\Users\brother\source\repos\usermodule\bin\Debug\usermodule.dll
+C:\Users\brother\source\repos\usermodule\bin\Debug\usermodule.pdb
+C:\Users\brother\source\repos\usermodule\obj\Debug\usermodule.csproj.AssemblyReference.cache
+C:\Users\brother\source\repos\usermodule\obj\Debug\usermodule.csproj.CoreCompileInputs.cache
+C:\Users\brother\source\repos\usermodule\obj\Debug\usermodule.dll
+C:\Users\brother\source\repos\usermodule\obj\Debug\usermodule.pdb

@@ -1,0 +1,9 @@
+C:\Users\brother\source\repos\AdminModule\bin\Debug\AdminModule.dll
+C:\Users\brother\source\repos\AdminModule\bin\Debug\AdminModule.pdb
+C:\Users\brother\source\repos\AdminModule\obj\Debug\AdminModule.csproj.AssemblyReference.cache
+C:\Users\brother\source\repos\AdminModule\obj\Debug\AdminModule.csproj.CoreCompileInputs.cache
+C:\Users\brother\source\repos\AdminModule\obj\Debug\AdminModule.dll
+C:\Users\brother\source\repos\AdminModule\obj\Debug\AdminModule.pdb
+C:\Users\brother\source\repos\AdminModule\bin\Debug\usermodule.dll
+C:\Users\brother\source\repos\AdminModule\bin\Debug\usermodule.pdb
+C:\Users\brother\source\repos\AdminModule\obj\Debug\AdminModule.csproj.CopyComplete

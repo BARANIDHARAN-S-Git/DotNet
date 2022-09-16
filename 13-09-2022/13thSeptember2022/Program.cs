@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using usermodule;
+using AdminModule;
 
 namespace _13thSeptember2022
 {
@@ -56,33 +57,40 @@ namespace _13thSeptember2022
                 Console.ReadLine();
             }
 
+           
 
+            
 
-            u2.Movieborrowed(m1);
-              u4.Movieborrowed(m1);
-              Console.WriteLine("Movie 1 Availability " + m1.Available);
-              u2.RetrunMovie(m1, 2);
-              Console.WriteLine("Movie 1 Availability " + m1.Available);
-              u3.Movieborrowed(m1);
-
-              u5.Movieborrowed(m1);
-
-              u1.Movieborrowed(m2);
-              u1.RetrunMovie(m2, 8);
-              u1.Movieborrowed(m3);
-              Console.WriteLine("-----------------------------------------------------------------");
-              u1.ShowMyList();
-              Console.WriteLine("-----------------------------------------------------------------");
+             
 
               Console.WriteLine("Based on Language");
-              u1.SearchByLanguage("Tamil");
+              u1.basedonlanguage("Tamil");
               Console.WriteLine("------------------------------------------------------------------");
               Console.WriteLine("Based on genre");
-              u1.SearchByGenre("Action");
+              u1.basedongenre("Action");
+
+            Admin a = new Admin();
+            Console.WriteLine("Admin");
+            a.ad();
+            Console.WriteLine("----------------------------");
+            u5.Movieborrowed(m1);
+            u2.Movieborrowed(m1);
+            u4.Movieborrowed(m1);
+            Console.WriteLine("Movie 1 Availability " + m1.Available);
+            u2.RetrunMovie(m1, 2);
+            Console.WriteLine("Movie 1 Availability " + m1.Available);
+            u3.Movieborrowed(m1);
+
+            u1.Movieborrowed(m2);
+            u1.RetrunMovie(m2, 8);
+            u1.Movieborrowed(m3);
+            Console.WriteLine("-----------------------------------------------------------------");
+            u1.display();
+            Console.WriteLine("-----------------------------------------------------------------");
 
 
 
-          }
+        }
 
 
       

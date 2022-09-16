@@ -8,6 +8,7 @@ namespace usermodule
 {
     public class Movie
     {
+        
         public static int countofmovies = 0;
         public Movie()
         {
@@ -71,13 +72,56 @@ namespace usermodule
             this.Cost = Cost;
             l.Add(this);
             countofmovies++;
+            
         }
-        public static void print()
+        public void addadmin(string name)
+        {
+            this.MovieName=name;
+            l.Add(this);
+            countofmovies++;
+        }
+
+
+        
+        public void delete(string MovieName)
+        {
+            
+            var itemoremove=l.Find(a=>a.MovieName==MovieName);
+            if (itemoremove != null)
+            {
+                l.Remove(itemoremove);
+            }
+           
+        }
+
+        public void update(string MovieName)
+        {
+            /* int index = l.FindIndex(a => a.MovieName == MovieName);
+
+
+                 l.RemoveAt(index);
+             this.MovieName = "Bigil";
+             l.Add(this);
+            */
+            var up = l.Find(d => d.MovieName == MovieName);
+            l.Remove(up);
+            
+            if(up!= null)
+            {
+                this.MovieName = "Bigil";
+                l.Add(this);
+                
+            }
+            
+        }
+        public void print()
         {
             foreach (var item in l)
             {
                 Console.WriteLine(item.MovieName);
             }
-        }
+        } 
+
+
     }
 }
