@@ -68,12 +68,13 @@ namespace _14thSeptember2022
             u.userid = 9999888877;
             u.password = 123456789;
             u.validateUser();
-            
-            u.Movieborrowed(m);
+            Movie m1 = new Movie();
+            m1.AddMovieDetails("Master", "Tamil", "Action", 400);
+            u.Movieborrowed(m1);
             var dt = new DateTime();
             dt = DateTime.Now;
             Console.WriteLine(dt);
-            Console.WriteLine("Movie 1 Availability " + m.Available);
+            Console.WriteLine("Movie 1 Availability " + m1.Available);
            
             FileStream fs2 = new FileStream("borrowreturn.soap", FileMode.Create, FileAccess.Write);
 
@@ -210,7 +211,7 @@ namespace _14thSeptember2022
             xmlserialization();
             jsonserialization();
             soapserialize(m1);
-            soapserialize(m1);
+            soapserialize1(m1);
             Console.ReadLine();
 
 

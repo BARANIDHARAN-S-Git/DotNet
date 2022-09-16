@@ -13,3 +13,6 @@ ajey 12 1234 5
 fahadh 112 23 5
 ajey 12 12 5
 harish 12 123 5
+alex 12 12 1
+ajey 12 12 5
+a 1 1 1
