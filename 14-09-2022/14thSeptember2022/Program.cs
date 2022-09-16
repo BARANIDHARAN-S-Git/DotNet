@@ -184,20 +184,13 @@ namespace _14thSeptember2022
             binaryserialization1();
 
 
-            // xmlserialization();
+            xmlserialization();
             jsonserialization();
             soapserialize(m1);
 
-            //User us1 = new User();
-            //Movie m = new Movie();
-           // m.AddMovieDetails("Master", "Tamil", "Action", 400);
-            u1.userid = 9999888877;
-            u1.password = 123456789;
-            u1.validateUser();
-            u1.Movieborrowed(m1);
+          
 
-
-            Console.WriteLine("------------------------------------Soapserisliztion-------------------------------------------");
+           
 
          
 
