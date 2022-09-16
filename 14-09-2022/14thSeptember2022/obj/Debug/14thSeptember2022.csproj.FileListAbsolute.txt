@@ -1,0 +1,12 @@
+C:\Users\brother\source\repos\14thSeptember2022\bin\Debug\14thSeptember2022.exe.config
+C:\Users\brother\source\repos\14thSeptember2022\bin\Debug\14thSeptember2022.exe
+C:\Users\brother\source\repos\14thSeptember2022\bin\Debug\14thSeptember2022.pdb
+C:\Users\brother\source\repos\14thSeptember2022\obj\Debug\14thSeptember2022.csproj.AssemblyReference.cache
+C:\Users\brother\source\repos\14thSeptember2022\obj\Debug\14thSeptember2022.csproj.SuggestedBindingRedirects.cache
+C:\Users\brother\source\repos\14thSeptember2022\obj\Debug\14thSeptember2022.csproj.CoreCompileInputs.cache
+C:\Users\brother\source\repos\14thSeptember2022\obj\Debug\14thSeptember2022.exe
+C:\Users\brother\source\repos\14thSeptember2022\obj\Debug\14thSeptember2022.pdb
+C:\Users\brother\source\repos\14thSeptember2022\bin\Debug\CustomerUser.dll
+C:\Users\brother\source\repos\14thSeptember2022\bin\Debug\CustomerUser.pdb
+C:\Users\brother\source\repos\14thSeptember2022\obj\Debug\14thSeptember2022.csproj.CopyComplete
+C:\Users\brother\source\repos\14thSeptember2022\bin\Debug\Json.Net.dll

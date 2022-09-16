@@ -1,0 +1,8 @@
+C:\Users\brother\source\repos\CustomerUser\bin\Debug\CustomerUser.dll
+C:\Users\brother\source\repos\CustomerUser\bin\Debug\CustomerUser.pdb
+C:\Users\brother\source\repos\CustomerUser\obj\Debug\CustomerUser.csproj.AssemblyReference.cache
+C:\Users\brother\source\repos\CustomerUser\obj\Debug\CustomerUser.csproj.CoreCompileInputs.cache
+C:\Users\brother\source\repos\CustomerUser\obj\Debug\CustomerUser.dll
+C:\Users\brother\source\repos\CustomerUser\obj\Debug\CustomerUser.pdb
+C:\Users\brother\source\repos\CustomerUser\bin\Debug\Json.Net.dll
+C:\Users\brother\source\repos\CustomerUser\obj\Debug\CustomerUser.csproj.CopyComplete

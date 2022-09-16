@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <moviesBorrowed>0</moviesBorrowed>
+  <BorrowedMovies />
+  <userLevel>2</userLevel>
+  <Available>10</Available>
+  <Language>Tamil</Language>
+  <genres>Action</genres>
+  <Cost>0</Cost>
+</Movie>
