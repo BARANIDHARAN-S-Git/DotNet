@@ -187,19 +187,6 @@ namespace _14thSeptember2022
             xmlserialization();
             jsonserialization();
             soapserialize(m1);
-
-          
-
-           
-
-         
-
-
-
-
-          
-            
-
             Console.ReadLine();
 
 
