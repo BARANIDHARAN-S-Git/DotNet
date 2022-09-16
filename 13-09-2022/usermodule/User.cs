@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Cache;
 using System.Text;
@@ -51,7 +52,8 @@ namespace usermodule
       
        
 
-        public void AddUser( string UserLevel1)
+     
+        public void userdetails(string UserLevel1)
         {
             if (UserLevel1 == "Silver")
             {
@@ -65,8 +67,38 @@ namespace usermodule
             {
                 this.userLevel = (int)UserLevel.Platinum;
             }
-         
-           
+            // this._UserName = username;
+            //this.Password = password;
+
+            FileStream f = new FileStream("user1.txt", FileMode.Append, FileAccess.Write);
+            StreamWriter sw = null;
+            try
+            {
+                sw = new StreamWriter(f);
+                Console.WriteLine("Enter the username");
+                string name = Console.ReadLine();
+                Console.WriteLine("Enter the userid");
+                int id = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the password");
+                string password = Console.ReadLine();
+                Console.WriteLine("Enter the userlevel");
+                int userlevel = Convert.ToInt32(Console.ReadLine());
+                sw.WriteLine(name + " " + id + " " + password + " " + userlevel);
+                Console.WriteLine("User Added");
+
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+            finally
+            {
+                sw.Close();
+                f.Close();
+            }
+
+
+
         }
         public void basedonlanguage(string language)
         {

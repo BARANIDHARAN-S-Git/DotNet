@@ -27,6 +27,9 @@ namespace AdminModule
             m.update("Master");
             m.print();
 
+            User u = new User();
+            u.userdetails("Silver");
+
           
 
         }
