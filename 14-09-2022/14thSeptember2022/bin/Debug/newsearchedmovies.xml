@@ -1,8 +1,13 @@
 <?xml version="1.0"?>
 <User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Available>10</Available>
-  <Cost>0</Cost>
   <searchedmovie>
+    <Movie>
+      <MovieName>Master</MovieName>
+      <Available>10</Available>
+      <Language>Tamil</Language>
+      <genres>Action</genres>
+      <Cost>400</Cost>
+    </Movie>
     <Movie>
       <MovieName>Master</MovieName>
       <Available>10</Available>

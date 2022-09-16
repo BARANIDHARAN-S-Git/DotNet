@@ -68,20 +68,13 @@ namespace _14thSeptember2022
             u.userid = 9999888877;
             u.password = 123456789;
             u.validateUser();
-            u.Movieborrowed(m);
+            
             u.Movieborrowed(m);
             var dt = new DateTime();
             dt = DateTime.Now;
             Console.WriteLine(dt);
             Console.WriteLine("Movie 1 Availability " + m.Available);
-            u.moviereturned(m, 2);
-            var dt1 = new DateTime();
-            dt1 = DateTime.Now;
-            Console.WriteLine(dt1);
-            
-            Console.WriteLine("Movie 1 Availability " + m.Available);
-            u.Movieborrowed(m);
-
+           
             FileStream fs2 = new FileStream("borrowreturn.soap", FileMode.Create, FileAccess.Write);
 
 
@@ -91,6 +84,36 @@ namespace _14thSeptember2022
             fs2.Flush();
             fs2.Close();
             fs2.Dispose();
+
+
+        }
+        public static void soapserialize1(Movie m)
+        {
+            User u = new User();
+
+            u.userid = 9999888877;
+            u.password = 123456789;
+            u.validateUser();
+
+            u.Movieborrowed(m);
+            
+            u.moviereturned(m, 2);
+            var dt1 = new DateTime();
+            dt1 = DateTime.Now;
+            Console.WriteLine(dt1);
+
+            Console.WriteLine("Movie 1 Availability " + m.Available);
+           
+
+            FileStream fs3 = new FileStream("borrowreturn1.soap", FileMode.Create, FileAccess.Write);
+
+
+            SoapFormatter soap = new SoapFormatter();
+            soap.Serialize(fs3, m.Available);
+
+            fs3.Flush();
+            fs3.Close();
+            fs3.Dispose();
 
 
         }
@@ -186,6 +209,7 @@ namespace _14thSeptember2022
 
             xmlserialization();
             jsonserialization();
+            soapserialize(m1);
             soapserialize(m1);
             Console.ReadLine();
 
