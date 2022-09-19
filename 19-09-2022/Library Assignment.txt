@@ -1,0 +1,36 @@
+create database LibrarydetailS
+
+use Librarydetails
+
+create table Member
+(
+Member_Id int primary key,
+Member_Name char(25),
+Acc_Open_Date date,
+Max_Books_Allowd int,
+Penalty_Amount decimal(7,2)
+)
+
+create table Book
+(
+Book_No int primary key,
+Book_Name varchar(30),
+Author char(30),
+cost decimal(7,2),
+category char(10)
+)
+
+create table Issue
+(
+Lib_Issue int primary key,
+Book_No int,
+Member_Id int,
+Issue_Date date,
+Return_date date
+)
+
+alter table Issue
+add foreign key(Book_No)references Book(Book_No)
+
+alter table Issue
+add foreign key(Member_Id) references Member(Member_Id)
