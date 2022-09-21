@@ -1,0 +1,234 @@
+create database LibrarySystem
+
+use LibrarySystem
+
+create table Member
+(
+Member_Id int primary key,
+Member_Name char(25),
+Acc_Open_Date date,
+Max_Books_Allowd int,
+Penalty_Amount numeric(7,2)
+)
+
+create table Book
+(
+Book_No int primary key,
+Book_Name varchar(30),
+Author char(30),
+cost numeric(7,2),
+category char(10)
+)
+
+create table Issue
+(
+Lib_Issue_Id numeric(10) primary key,
+Book_No int,
+Member_Id int,
+Issue_Date date,
+Return_date date
+)
+
+alter table Issue
+add foreign key(Book_No)references Book(Book_No)
+
+alter table Issue
+add foreign key(Member_Id) references Member(Member_Id)
+
+sp_help Member
+sp_help Book
+sp_help Issue
+
+alter table Issue
+add Comments char(100);
+
+--alter table Member
+--modify Member_Name char(30);
+
+alter table Issue
+add Reference char(30);
+
+alter table Issue
+drop column Reference
+
+EXEC sp_rename 'Issue','Lib_Issue';
+
+insert into Member values(1,'Richa Sharma','10-Dec-05',5,50)
+insert into Member values(2,'Garima Sen',getdate(),5,null)
+insert into Member values(3,'Bhagath Singh','15-Dec-06',5,50)
+insert into Member values(4,'Arjeeth Singh','14-June-07',5,50)
+insert into Member values(5,'Robin Uthappa','12-Sep-07',5,50)
+insert into Member values(6,'Rahul Uthappa','15-Sep-10',5,null)
+insert into Member values(7,'Rajiv','12-Sep-08',null,50)
+
+
+select * from Member
+
+alter table Member
+alter column Member_Name char(20);
+
+update Member
+set Max_Books_Allowd=110;
+
+insert into Member(Max_Books_Allowd) values(110);
+--Cannot insert the value NULL into column 'Member_Id', table 'LibrarySystem.dbo.Member'; column does not allow nulls. INSERT fails.
+
+create table Member101
+(
+Member_Id int primary key,
+Member_Name char(25),
+Acc_Open_Date date,
+Max_Books_Allowd int,
+Penalty_Amount numeric(7,2)
+)
+
+insert into Book values(101,'Let us C','Denis Ritchie',450,'System');
+insert into Book values(102,'Oracle-Complete Ref','Loni',550,'Database');
+insert into Book values(103,'Mastering SQL','Loni',250,'Database');
+insert into Book values(104,'PL SQL-Ref','Scott Urman',750,'Database');
+
+
+select * from Book
+
+insert into Book values(106,'PL SQL-Ref','Scott Urman',750,'Database'),
+(107,'Python','David',350,'Database'),
+(108,'Java','John',150,'Database');
+
+create table Book101
+(
+Book_No int primary key,
+Book_Name varchar(30),
+Author char(30),
+cost numeric(7,2),
+category char(10)
+
+)
+
+insert into Book101(Book_No,Book_Name,Author,cost,category)
+select Book_No,Book_Name,Author,cost,category
+from Book;
+
+select * from Book101;
+
+insert into Book values(105,'National Geographic','Adis Scott',1000,'Scinece');
+begin tran;
+rollback;
+
+update Book
+set cost=300,category='RDBMS'
+where Book_No=103;
+
+EXEC sp_rename 'Lib_Issue','Issue';
+
+insert into Issue (Lib_Issue_Id,
+Book_No ,
+Member_Id ,
+Issue_Date)
+values(7001,101,1,'10-Dec-06'),
+(7002,102,2,'25-Dec-06'),
+(7003,104,1,'15-Jan-06'),
+(7004,101,1,'04-Jul-06'),
+(7005,104,2,'15-Nov-06'),
+(7006,101,3,'18-Feb-06');
+
+select * from Issue;
+
+update Issue
+set Return_date='19-Jul-06'
+where Lib_Issue_Id=7004;
+
+update Issue
+set Return_date='30-Nov-06'
+where Lib_Issue_Id=7005;
+
+update Member
+set Penalty_Amount=100
+where Member_Name='Garima Sen';
+
+delete from Issue
+where Member_Id=1 and  Issue_Date<'10-Dec-06';
+
+
+delete from Book
+where category!='RDBMS' and category!='Database';
+
+drop table Member101;
+
+drop table Book101;
+
+sp_help Member
+sp_help Issue
+sp_help Book
+
+select * from Member
+select * from Issue
+select * from Book
+
+select * from LibrarySystem.INFORMATION_SCHEMA.TABLES
+go
+---------------------------------------------------------------------------------------------------
+--Task2
+
+select * from Member
+where Acc_Open_Date like '2006%';
+
+select Book_Name from Book
+where Author='Loni' and cost<600;
+
+select * from Issue
+where Return_date is null;
+
+update Issue
+set Return_date='31-Dec-06'
+where Lib_Issue_Id!=7005 and Lib_Issue_Id!=7006;
+
+select * from Issue
+where datediff(Day,Issue_Date,Return_date)>30;
+
+select Book_Name from Book
+where cost>500 and cost<750 and category='Database';
+
+select Book_Name from Book
+where category='Science' or category='Database' or category='Fiction' or category='Management';
+
+select * from Member
+order by Penalty_Amount desc;
+
+select * from Book
+order by category,cost desc;
+
+select * from Book
+where Book_Name like '%SQL%';
+
+select Member_Name from Member
+where (Member_Name like'R%' or Member_Name like 'G%')and Member_Name LIKE '%I%';
+
+select upper(Author) as Author from Book
+order by Book_Name desc;
+
+select Book_No,('is written by') as '--------------------',Book_Name from Book;
+
+
+select concat(Book_Name,' *. ',Author)from Book
+
+select Lib_Issue_Id,Issue_Date,Return_Date,datediff(DAY,Issue_Date,Return_date) as No_Of_Days_Book_Issued  from Issue
+
+select * from Member
+order by Acc_Open_Date;
+
+select count(Book_Name) from Book
+where Book_No=101;
+
+select sum(Penalty_Amount) from Member
+
+select sum(cost) from Book
+where category='Database';
+
+
+select min(cost) from Book;
+
+
+select avg(cost) from Book
+where category='Database';
+
+
