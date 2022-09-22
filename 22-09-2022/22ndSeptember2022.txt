@@ -1,0 +1,71 @@
+create database Library
+
+use Library
+
+create table Member_c
+(
+Member_Id  numeric(10) constraint Mem_Id primary key,
+Acc_Open_Date date constraint acc_odate default getdate(),
+Max_Allowed_Books numeric(5) constraint max_allbooks check(Max_Allowed_Books<100),
+penalty numeric(3) constraint m_pen check(penalty<=1000)
+)
+
+create table Book_c
+(
+Book_No numeric(10) constraint Bo_No primary key ,
+Book_Name varchar(20) constraint bo_Name not null,
+category varchar(10) constraint book_categiry check(category='Science' or category='Fiction' or  category='Database' or category='RDBMS' or category='Others'),
+price int
+)
+
+create table Issue_c
+(
+Lib_Issue_Id numeric(10) constraint Lib_Id primary key,
+Member_Id numeric(10),
+Book_No numeric(10),
+Issue_date date,
+Return_date date,
+constraint chk_date check(Issue_Date<Return_Date),
+foreign key(Member_Id) references Member_C(Member_Id),
+foreign key(Book_No) references Book_C(Book_No)
+)
+
+alter table Book_c
+add constraint Book_price  check(price<2500);
+
+select constraint_name,constraint_type 
+from information_schema.table_constraints
+where table_name='Issue_c';
+
+alter table Issue_c
+nocheck constraint chk_date;
+
+create view Book_detail
+as
+select Issue_c.Lib_Issue_Id,Book_c.Book_Name,Issue_c.Issue_date
+FROM Issue_c,Book_c
+where Book_c.category='RDBMS' or category='Database' and price>500 and price<750 ;
+
+create view display_Book
+as
+select * from Book_c
+where price>500;
+
+create view view_Book
+as
+select * from Book_c
+
+update view_Book
+set Book_Name='You Can Win'
+where Book_No=1
+
+create index Name_Of_Book
+on Book_c(Book_Name)
+
+create index Issue_Index
+on Issue_c(Member_Id,Book_No)
+
+Index:Index refers  to a normal non-unique index.Non-distinct values for the index are allowed.
+Unique Index:Unique refers to an Index where all rows of the index must be unique.
+
+yes,we need to create index on Member_Id in Member_C table
