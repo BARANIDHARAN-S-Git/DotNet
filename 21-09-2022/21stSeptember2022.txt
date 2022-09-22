@@ -66,11 +66,7 @@ select avg(cost) from Book
 where category='Database';
 
 
-
-
 --------------------------------------------------------------------------------------------------------------------------------------
-
-
 
 select Book.category,
 count(*) as count
@@ -131,8 +127,6 @@ from Book group by Category
 Select issue.Lib_Issue_Id,issue.Member_Id,issue.Book_No 
 from issue inner join member on issue.Member_Id=member.member_id
 where issue.Issue_Date not between member.Acc_open_date and issue.Return_date
-
-
 
 Select * from member where member_id not in(Select member.member_id
 from issue inner join member on member.member_id=Issue.Member_Id 
