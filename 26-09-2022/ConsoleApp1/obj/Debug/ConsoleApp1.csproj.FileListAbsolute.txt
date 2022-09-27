@@ -1,0 +1,16 @@
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\BusinessLogicLibrary.dll
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\HelperLibrary.dll
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\BusinessLogicLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\HelperLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\DataAccessLibrary.dll
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\DataAccessLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\ConsoleApp1\ConsoleApp1\bin\Debug\DataAccessLibrary.dll.config
