@@ -1,0 +1,10 @@
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\obj\Debug\DisconnectedDAL.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\obj\Debug\DisconnectedDAL.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\bin\Debug\DisconnectedDAL.dll.config
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\bin\Debug\DisconnectedDAL.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\bin\Debug\DisconnectedDAL.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\obj\Debug\DisconnectedDAL.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\obj\Debug\DisconnectedDAL.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\bin\Debug\DisconnectedBLL.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\bin\Debug\DisconnectedBLL.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedDAL\obj\Debug\DisconnectedDAL.csproj.CopyComplete

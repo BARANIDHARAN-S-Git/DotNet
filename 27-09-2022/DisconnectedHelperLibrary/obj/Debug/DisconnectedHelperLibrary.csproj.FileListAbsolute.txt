@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\DisconnectedHelperLibrary.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\DisconnectedHelperLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedHelperLibrary.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedHelperLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\DisconnectedHelperLibrary.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\DisconnectedHelperLibrary.pdb
