@@ -1,0 +1,16 @@
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\obj\Debug\29thSeptember2022.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\obj\Debug\29thSeptember2022.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\obj\Debug\29thSeptember2022.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\29thSeptember2022.exe.config
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\29thSeptember2022.exe
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\29thSeptember2022.pdb
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\obj\Debug\29thSeptember2022.exe
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\obj\Debug\29thSeptember2022.pdb
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\DataAccessLibrary.dll
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\DataAccessLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\DataAccessLibrary.dll.config
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Desktop\vs\29thSeptember2022\29thSeptember2022\obj\Debug\29thSeptember2022.csproj.CopyComplete
