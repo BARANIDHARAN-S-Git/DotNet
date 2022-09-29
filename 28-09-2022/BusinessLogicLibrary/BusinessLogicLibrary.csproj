@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6F4BF18D-41FF-448D-9C5F-97FD8D3471EB}</ProjectGuid>
+    <ProjectGuid>{4306E03E-1493-4441-876B-42B4EC92C10F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccessLibrary</RootNamespace>
-    <AssemblyName>DataAccessLibrary</AssemblyName>
+    <RootNamespace>BusinessLogicLibrary</RootNamespace>
+    <AssemblyName>BusinessLogicLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataAccessLibrary">
+      <HintPath>..\DataAccessLibrary\bin\Debug\DataAccessLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -43,8 +46,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,58 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book.cs">
-      <DependentUpon>LibrarySystem.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Issue.cs">
-      <DependentUpon>LibrarySystem.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LibrarySystem.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibrarySystem.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LibrarySystem.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibrarySystem.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LibrarySystem.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibrarySystem.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Member.cs">
-      <DependentUpon>LibrarySystem.tt</DependentUpon>
-    </Compile>
+    <Compile Include="BookBAL.cs" />
+    <Compile Include="BookOperations.cs" />
+    <Compile Include="MemberBAL.cs" />
+    <Compile Include="MemberOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="LibrarySystem.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LibrarySystem.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="LibrarySystem.edmx.diagram">
-      <DependentUpon>LibrarySystem.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="LibrarySystem.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LibrarySystem.edmx</DependentUpon>
-      <LastGenOutput>LibrarySystem.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="LibrarySystem.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LibrarySystem.edmx</DependentUpon>
-      <LastGenOutput>LibrarySystem.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
