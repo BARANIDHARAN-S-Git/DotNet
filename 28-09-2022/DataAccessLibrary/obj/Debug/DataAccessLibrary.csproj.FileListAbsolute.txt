@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\bin\Debug\DataAccessLibrary.dll
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\bin\Debug\DataAccessLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.dll
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\bin\Debug\DataAccessLibrary.dll.config
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Desktop\vs\september28th2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.csproj.CopyComplete
