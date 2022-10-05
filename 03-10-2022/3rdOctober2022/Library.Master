@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Library.master.cs" Inherits="_3rdOctober2022.Library" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 893px;
+            height: 200px;
+        }
+        .auto-style2 {
+            width: 570px;
+            height: 129px;
+            margin-left: 0px;
+        }
+    </style>
+    </head>
+<body>
+    <form id="form1" runat="server">
+       <table style="font-family:Arial">
+           <tr>
+               <td colspan="3" style="width:900px;height:70px;background-color:aqua;text-align:center">
+                   <h1>
+                       <img alt="Header" class="auto-style2" src="fonts/Header.jfif" /></h1>
+                   <h1>Library</h1>
+
+
+               </td>
+           </tr>
+           <tr>
+               <td style="height:400px;background-color:red;width:200px">
+                  
+
+
+               </td>
+
+
+           
+           <td style="height:600px;background-color:aquamarine;width:500px">
+               
+                <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p style="font-size: 30px; font-weight: bolder; font-variant: inherit; text-transform: capitalize; color: #FF0000;">
+                   
+                  
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                </p>
+                <p>
+                    <br />
+                </p>
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+
+           </td>
+               </tr>
+           <tr>
+               <td colspan="2";style="background-color:orange;text-align:center">
+                   
+
+                   <img alt="Footer" class="auto-style1" src="fonts/Footer.jpg" /></td>
+           </tr>
+
+
+       </table>
+    </form>
+</body>
+</html>
