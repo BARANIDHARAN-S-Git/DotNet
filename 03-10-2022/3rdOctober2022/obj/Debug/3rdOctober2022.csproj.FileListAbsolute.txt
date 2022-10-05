@@ -74,4 +74,3 @@ C:\Users\Lenovo\Desktop\vs\3rdOctober2022\3rdOctober2022\obj\Debug\3rdOctober202
 C:\Users\Lenovo\Desktop\vs\3rdOctober2022\3rdOctober2022\obj\Debug\3rdOctober2022.pdb
 C:\Users\Lenovo\Desktop\vs\3rdOctober2022\3rdOctober2022\bin\DataAccessLibrary.dll
 C:\Users\Lenovo\Desktop\vs\3rdOctober2022\3rdOctober2022\bin\DataAccessLibrary.pdb
-C:\Users\Lenovo\Desktop\vs\3rdOctober2022\3rdOctober2022\bin\DataAccessLibrary.dll.config

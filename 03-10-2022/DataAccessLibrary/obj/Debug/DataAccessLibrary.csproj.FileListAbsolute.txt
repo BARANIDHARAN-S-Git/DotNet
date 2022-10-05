@@ -4,4 +4,3 @@ C:\Users\Lenovo\Desktop\vs\3rdOctober2022\DataAccessLibrary\obj\Debug\DataAccess
 C:\Users\Lenovo\Desktop\vs\3rdOctober2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\vs\3rdOctober2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.dll
 C:\Users\Lenovo\Desktop\vs\3rdOctober2022\DataAccessLibrary\obj\Debug\DataAccessLibrary.pdb
-C:\Users\Lenovo\Desktop\vs\3rdOctober2022\DataAccessLibrary\bin\Debug\DataAccessLibrary.dll.config
