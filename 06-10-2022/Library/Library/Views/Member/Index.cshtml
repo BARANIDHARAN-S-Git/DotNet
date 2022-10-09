@@ -1,0 +1,27 @@
+﻿@using Library.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Memberid</th>
+        <th>Membername</th>
+        <th>Accountopendate</th>
+        <th>MaximumBooksAllowed</th>
+        <th>PenaltyAmount</th>
+    </tr>
+    @foreach (var item in @ViewBag.members)
+    {
+        <tr>
+
+            <td>@item.Memberid</td>
+            <td>@item.Membername</td>
+            <td>@item.AccountOpenDate</td>
+            <td>@item.MaximumBooksAllowed </td>
+            <td>@item.penaltyamount </td>
+        </tr>
+    }
+</table>

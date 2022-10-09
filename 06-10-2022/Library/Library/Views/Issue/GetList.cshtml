@@ -1,0 +1,28 @@
+﻿@using Library.Models;
+@{
+    ViewBag.Title = "GetList";
+}
+
+<h2>GetList</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Lib_Issue_Id</th>
+        <th>book_No</th>
+        <th>Member_Id</th>
+    </tr>
+    
+    @foreach (IssueModel item in (List<IssueModel>)TempData["mybag"])
+    {
+        <tr>
+
+            <td>@item.Lib_Issue_Id</td>
+            <td>@item.Book_No</td>
+            <td>@item.Member_Id</td>
+
+        </tr>
+    }
+
+
+
+</table>

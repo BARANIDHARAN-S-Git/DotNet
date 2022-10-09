@@ -1,0 +1,27 @@
+﻿@using Library.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Book_No</th>
+        <th>Book_name</th>
+        <th>Authorname</th>
+        <th>Price</th>
+    </tr>
+    @foreach (BookModel item in (List<BookModel>)@ViewData["mybooklist"])
+    {
+        <tr>
+
+            <td>@item.Book_No</td>
+            <td>@item.Book_Name</td>
+            <td>@item.Authorname</td>
+            <td>@item.price</td>
+
+        </tr>
+    }
+</table>
+
