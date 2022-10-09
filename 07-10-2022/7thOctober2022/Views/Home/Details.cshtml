@@ -1,0 +1,72 @@
+﻿@model _7thOctober2022.Models.MemberModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div>
+        <strong>success! </strong> @TempData["SuccessMessage"]
+
+    </div>
+}
+else if (TempData["InfoMessage"] != null)
+{
+    <div>
+        <strong>Error! </strong> @TempData["SuccessMessage"]
+
+    </div>
+
+}
+else if (TempData["ErrorMessage"] != null)
+{
+    <div>
+        <strong>Error! </strong> @TempData["ErrorMessage"]
+
+    </div>
+}
+<div>
+    <h4>MemberModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountOpenedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountOpenedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaximumBooksAllowed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaximumBooksAllowed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Member_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

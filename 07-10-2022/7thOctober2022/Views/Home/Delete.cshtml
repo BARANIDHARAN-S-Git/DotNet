@@ -1,0 +1,80 @@
+﻿@model _7thOctober2022.Models.MemberModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div>
+        <strong>success! </strong> @TempData["SuccessMessage"]
+
+    </div>
+}
+else if (TempData["InfoMessage"] != null)
+{
+    <div>
+        <strong>Error! </strong> @TempData["SuccessMessage"]
+
+    </div>
+
+}
+else if (TempData["ErrorMessage"] != null)
+{
+    <div>
+        <strong>Error! </strong> @TempData["ErrorMessage"]
+
+    </div>
+}
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MemberModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountOpenedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountOpenedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaximumBooksAllowed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaximumBooksAllowed)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+       
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

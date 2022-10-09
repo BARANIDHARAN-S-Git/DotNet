@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <table style="width:100%;">
+            <tr>
+                <td>
+                    <img style="height:100px;" src="https://www.mainstreetumc.org/wp-content/uploads/2020/07/Library-Header1-1024x211.jpg" />
+                    <h1>Library</h1>
+                    
+                   
+                </td>
+                
+                   
+                
+                
+            </tr>
+            <tr>
+                <td>
+                    Menu:
+                    <br />
+                    @Html.ActionLink("Home", "Index", "Home");
+                    <br/>
+                    @Html.ActionLink("About", "About", "Home");
+                    <br/>
+                    @Html.ActionLink("Contact", "Contact", "Home");
+                    @Html.ActionLink("Edit", "Edit", "Home");
+                </td>
+                <td> @RenderBody()</td>
+               
+            </tr>
+            <tr>
+              <br/>
+                <br/>
+                <td style="color:aquamarine;background-color:red">
+                   Thank You!
+                    
+                </td>
+                
+            </tr>
+        </table>
+
+       
+    </div>
+   
+</body>
+</html>

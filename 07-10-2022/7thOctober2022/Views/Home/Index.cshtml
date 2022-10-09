@@ -1,0 +1,68 @@
+﻿@model IEnumerable<_7thOctober2022.Models.MemberModel>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div>
+        <strong>success! </strong> @TempData["SuccessMessage"]
+
+    </div>
+}
+else if (TempData["InfoMessage"] != null)
+{
+    <div>
+        <strong>Error! </strong> @TempData["SuccessMessage"]
+
+    </div>
+
+}
+else if (TempData["ErrorMessage"] != null)
+{
+    <div>
+        <strong>Error! </strong> @TempData["ErrorMessage"]
+
+    </div>
+}
+<p>
+    @Html.ActionLink("Create New Member", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountOpenedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaximumBooksAllowed)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Member_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Member_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountOpenedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaximumBooksAllowed)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Member_Id }) 
+                @Html.ActionLink("Details", "Details", new { id=item.Member_Id }) 
+                @Html.ActionLink("Delete", "Delete", new {id= item.Member_Id })
+            </td>
+        </tr>
+    }
+
+</table>
