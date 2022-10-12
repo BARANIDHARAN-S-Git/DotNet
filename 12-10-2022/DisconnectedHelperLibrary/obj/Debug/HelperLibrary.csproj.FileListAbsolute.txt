@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\HelperLibrary.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\HelperLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\DisconnectedHelperLibrary.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\DisconnectedHelperLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedHelperLibrary.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedHelperLibrary.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedBLL.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedDAL.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedBLL.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedDAL.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\bin\Debug\DisconnectedDAL.dll.config
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedHelperLibrary\obj\Debug\HelperLibrary.csproj.CopyComplete

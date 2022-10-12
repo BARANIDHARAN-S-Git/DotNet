@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedBLL\bin\Debug\DisconnectedBLL.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedBLL\bin\Debug\DisconnectedBLL.pdb
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedBLL\obj\Debug\DisconnectedBLL.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedBLL\obj\Debug\DisconnectedBLL.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedBLL\obj\Debug\DisconnectedBLL.dll
+C:\Users\Lenovo\Desktop\vs\Disconnected\DisconnectedBLL\obj\Debug\DisconnectedBLL.pdb
