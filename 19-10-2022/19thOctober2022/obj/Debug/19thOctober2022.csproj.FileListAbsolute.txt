@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\vs\19thOctober2022\19thOctober2022\bin\Debug\19thOctober2022.dll
+C:\Users\Lenovo\Desktop\vs\19thOctober2022\19thOctober2022\bin\Debug\19thOctober2022.pdb
+C:\Users\Lenovo\Desktop\vs\19thOctober2022\19thOctober2022\obj\Debug\19thOctober2022.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\vs\19thOctober2022\19thOctober2022\obj\Debug\19thOctober2022.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\vs\19thOctober2022\19thOctober2022\obj\Debug\19thOctober2022.dll
+C:\Users\Lenovo\Desktop\vs\19thOctober2022\19thOctober2022\obj\Debug\19thOctober2022.pdb
