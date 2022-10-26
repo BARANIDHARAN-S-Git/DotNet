@@ -1,0 +1,12 @@
+C:\newvs\MovieRental\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\newvs\MovieRental\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\newvs\MovieRental\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\newvs\MovieRental\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\newvs\MovieRental\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\newvs\MovieRental\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\newvs\MovieRental\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\newvs\MovieRental\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\newvs\MovieRental\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\newvs\MovieRental\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\newvs\MovieRental\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\newvs\MovieRental\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

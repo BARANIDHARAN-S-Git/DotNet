@@ -1,0 +1,15 @@
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\EntityFramework.dll
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\EntityFramework.xml
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\newvs\MovieRental\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\newvs\MovieRental\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\newvs\MovieRental\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+C:\newvs\MovieRental\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\newvs\MovieRental\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\newvs\MovieRental\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll.config
